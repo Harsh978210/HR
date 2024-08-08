@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .nav .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .nav .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+        .nav .user img {
+            border-radius: 50%;
+        }
+        .profile-header {
+            position: relative;
+            text-align: center;
+            background-color: #555;
+            color: white;
+            padding: 50px 0;
+        }
+        .profile-header .cover-photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .profile-header h2 {
+            margin: 20px 0 5px 0;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .tabs a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            border-bottom: 2px solid transparent;
+        }
+        .tabs a.active {
+            border-bottom: 2px solid #333;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content .section {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <div class="logo">
+                <img src="https://thebrandhopper.com/wp-content/uploads/2023/09/Riot-Games-Success.jpg" alt="Game Logo" style="vertical-align: middle; height: 40px;">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Friends</a>
+                <a href="#">Messages</a>
+                <a href="#">Settings</a>
+            </div>
+            <div class="user">
+                <img src="https://via.placeholder.com/40?text=User" alt="User Avatar" width="40">
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-header">
+        <img src="https://www.riotgames.com/darkroom/800/87521fcaeca5867538ae7f46ac152740:2f8144e17957078916e41d2410c111c3/002-rg-2021-full-lockup-offwhite.jpg" alt="Cover Photo" class="cover-photo">
+        <h2>Username</h2>
+        <p>Status or tagline</p>
+    </div>
+
+    <div class="tabs">
+        <a href="#" class="active">About</a>
+        <a href="#">Friends</a>
+        <a href="#">Achievements</a>
+        <a href="#">Media</a>
+        <a href="#">Activity</a>
+    </div>
+
+    <div class="content">
+        <!-- About Section -->
+        <div class="section about">
+            <h3>About</h3>
+            <p>Bio goes here...</p>
+            <h4>Game Stats</h4>
+            <p>Level: 45</p>
+            <p>Hours Played: 120</p>
+            <p>Top Achievements: Lorem ipsum dolor sit amet.</p>
+        </div>
+        <!-- Other sections can be similarly structured -->
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Game Company. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Terms of Service</a> |
+            <a href="#">Contact Us</a>
+        </p>
+    </div>
+
+</body>
+</html>
